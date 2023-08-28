@@ -1,6 +1,7 @@
 import java.util.List;
 
 import daos.BookDao;
+import daos.OcrCETDao;
 import domain.Book;
 
 public class App {
@@ -16,7 +17,10 @@ public class App {
             BookDao.writeFileCSV("./livros.csv", saveBooks);
             */
 
-           BookDao.writeDataBase("./livros.csv");
+           //BookDao.writeDataBase("./livros.csv");
+
+           //OcrCETDao.exportContratosSqlServerToMySql();
+           OcrCETDao.exportDataSqlServerToMySql();
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
