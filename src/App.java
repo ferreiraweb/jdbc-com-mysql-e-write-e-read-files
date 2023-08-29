@@ -20,7 +20,9 @@ public class App {
            //BookDao.writeDataBase("./livros.csv");
 
            //OcrCETDao.exportContratosSqlServerToMySql();
-           OcrCETDao.exportDataSqlServerToMySql();
+           //OcrCETDao.exportDataSqlServerToMySql();
+           //OcrCETDao.exportEquipamentoSqlServerToMySql();
+           OcrCETDao.exportTempoSqlServerToMySql();
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
